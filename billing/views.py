@@ -9,5 +9,6 @@ def home(request):
     return HttpResponse(total.get()) # get() to return from task when finishes
 
 def heavy(request):
-    hey = mul.delay(32131,54353245)
+    hey = mul.delay(3,5)
+    time.sleep(2)
     return HttpResponse("base... Check Database")
